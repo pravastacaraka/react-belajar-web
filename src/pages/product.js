@@ -8,7 +8,7 @@ class ProductPage extends React.Component {
     render() { 
         return ( 
             <div>
-
+                Product Page
             </div>
         );
     }
