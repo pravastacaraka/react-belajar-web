@@ -1,4 +1,22 @@
 .form-control:focus {
-  outline: 0 !important;
-  box-shadow: none !important;
+  outline: 0;
+  box-shadow: none;
+  border-color: #228BE6;
+}
+
+.form-search>.form-control {
+  font-size: 12px;
+  max-height: 30px;
+  border-radius: 8px !important;
+}
+
+.form-search>.input-group-append {
+  max-height: 30px;
+  margin-left: -73px;
+  z-index: 3;
+}
+
+.form-control:focus + .input-group-append>.btn-search {
+  border-color: #228BE6;
+  border-left-color: transparent;
 }

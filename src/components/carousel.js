@@ -26,8 +26,6 @@ export default (props) => {
                                     width: '100%',
                                     color: 'white',
                                     margin: 0,
-                                    // opacity:0.5,
-                                    // background: "rgba(64,65,70,0.4)",
                                     background: "linear-gradient(90deg, rgba(64,65,70,0.6867880941439075) 0%, rgba(3,118,171,1) 50%, rgba(64,65,70,0) 100%)"
                                 }}>
                                     {item.title}

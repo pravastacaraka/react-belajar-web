@@ -1,4 +1,42 @@
 .btn:focus {
-  outline: 0 !important;
-  box-shadow: none !important;
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn.btn-primary {
+  background-color: #228BE6;
+  border-color: #228BE6;
+}
+
+.btn.btn-outline-primary {
+  color: #228BE6;
+  border-color: #228BE6;
+}
+
+.btn.btn-outline-primary:not(.btn-login):hover {
+  background-color: #228BE6;
+  border-color: #228BE6;
+  color: #FFF;
+}
+
+.btn-header {
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 32px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 0;
+}
+
+.btn-login:hover {
+  color: #228BE6;
+  border-color: #228BE6;
+  background-color: #FFF;
+}
+
+.btn-search {
+  line-height: 0;
+  color: #9FA6B0;
+  background-color: #CFD2D4;
+  border-radius: 8px;
 }
