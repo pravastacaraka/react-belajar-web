@@ -1,22 +1,25 @@
+.form-search > .form-control {
+  font-size: 12px;
+  height: 32px;
+  border-radius: 8px !important;
+  border-color: #E5E7E9;
+}
+
 .form-control:focus {
   outline: 0;
   box-shadow: none;
   border-color: #228BE6;
 }
 
-.form-search>.form-control {
-  font-size: 12px;
-  max-height: 30px;
-  border-radius: 8px !important;
-}
-
-.form-search>.input-group-append {
-  max-height: 30px;
-  margin-left: -73px;
+.form-search > .input-group-append {
+  margin-left: -33px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  height: 32px;
   z-index: 3;
 }
 
-.form-control:focus + .input-group-append>.btn-search {
+.form-control:focus + .input-group-append {
   border-color: #228BE6;
   border-left-color: transparent;
 }

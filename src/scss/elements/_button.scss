@@ -35,8 +35,17 @@
 }
 
 .btn-search {
+  color: #9FA6B0;
   line-height: 0;
+  width: 32px;
+  padding: 0;
+  background-color: #E5E7E9;
+  transition: background-color 280ms ease;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn-search:hover {
   color: #9FA6B0;
   background-color: #CFD2D4;
-  border-radius: 8px;
 }
