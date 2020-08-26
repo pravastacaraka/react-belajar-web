@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faMobileAlt, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 export default (props) => {
   return (
@@ -27,7 +27,7 @@ export default (props) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link to="/product" className="nav-link">Product</Link>
+              <Link to="/products" className="nav-link">Product</Link>
             </li>
             <li className="nav-item">
               <Link to="/form" className="nav-link">Form</Link>
@@ -41,6 +41,13 @@ export default (props) => {
               </button>
             </div>
           </form>
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item">
+              <div className="nav-link" style={{ padding: ".2rem .7rem", cursor: "pointer" }}>
+                <FontAwesomeIcon icon={faShoppingCart} />
+              </div>
+            </li>
+          </ul>
           <Link to="/login"><button className="btn btn-outline-primary btn-login btn-header mr-2">Masuk</button></Link>
           <Link to="/register"><button className="btn btn-primary btn-header">Daftar</button></Link>
         </div>
