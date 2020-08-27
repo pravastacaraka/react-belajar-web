@@ -2,7 +2,7 @@ import React from 'react';
 import Axios from 'axios';
 import CarouselComponent from '../components/carousel';
 
-const apiURL = 'http://localhost:2000';
+const apiURL = 'http://localhost:6996';
 
 class LandingPage extends React.Component {
   constructor(props) {

@@ -4,7 +4,7 @@ import NumberFormat from "react-number-format";
 import { Link } from "react-router-dom";
 import { Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText, Spinner } from 'reactstrap';
 
-const apiURL = 'http://localhost:2000';
+const apiURL = 'http://localhost:6996';
 let loader = true;
 
 class ProductPage extends React.Component {
@@ -36,10 +36,16 @@ class ProductPage extends React.Component {
   printData = () => {
     return this.state.dbProduct !== null ?
       this.state.dbProduct.map((item, index) => {
-        const productUrl = item.id + '/' + item.name
+        const productName = item.name.toLowerCase().replace(/\s/g, "-");
+        const productUrl =  '/p/' + productName + '-' + item.id;
         return (
-          <div className='col-sm-6 col-md-3 col-lg-2 px-2 my-2' key={ index }>
-            <Link to={ productUrl }>
+          <div className='col-sm-6 col-md-3 col-lg-2 px-2' key={ index }>
+            <Link to={{
+              pathname: productUrl,
+              state: {
+                id: item.id
+              }
+            }}>
               <Card className='product-card'>
                 <CardImg top width="100%" src={ item.images[0] } alt={ item.name } />
                 <CardBody>
@@ -71,7 +77,7 @@ class ProductPage extends React.Component {
   render() {
     return (
       <div className='container'>
-        <div className='row py-3'>
+        <div className='row py-4'>
           { loader ? this.loaderData() : this.printData() }
         </div>
       </div>

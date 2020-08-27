@@ -8,6 +8,7 @@ import Navbar from './components/navbar'
 import LandingPage from './pages/landing'
 import FormPage from './pages/form'
 import ProductPage from './pages/products';
+import ProductDetail from "./pages/product-detail";
 import Error404 from "./pages/error-404";
 
 class App extends React.Component {
@@ -23,6 +24,7 @@ class App extends React.Component {
           <Route path="/" exact component={ LandingPage }/>
           <Route path="/form" component={ FormPage }/>
           <Route path="/products" component={ ProductPage }/>
+          <Route path="/p/:product" component={ ProductDetail }/>
           <Route component={ Error404 }/>
         </Switch>
       </BrowserRouter>

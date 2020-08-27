@@ -43,7 +43,13 @@ export default (props) => {
           </form>
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <div className="nav-link" style={{ padding: ".2rem .7rem", cursor: "pointer" }}>
+              <div className="nav-link" style={{
+                fontSize: "1.14285714em",
+                padding: "0 .7em 0 .6em",
+                height: "32px",
+                lineHeight: "32px",
+                cursor: "pointer"
+              }}>
                 <FontAwesomeIcon icon={faShoppingCart} />
               </div>
             </li>
