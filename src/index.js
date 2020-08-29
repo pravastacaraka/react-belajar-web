@@ -5,9 +5,9 @@ import * as serviceWorker from './serviceWorker';
 
 /* Custom CSS */
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'slick-carousel/slick/slick.css'; 
+import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './index.css';
+import './index.scss';
 
 import { BrowserRouter } from 'react-router-dom';
 

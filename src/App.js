@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 /* Components */
 import Navbar from './components/navbar'
+import Footer from './components/footer'
 
 /* Pages */
 import LandingPage from './pages/landing'
@@ -27,6 +28,7 @@ class App extends React.Component {
           <Route path="/p/:product" component={ ProductDetail }/>
           <Route component={ Error404 }/>
         </Switch>
+        <Footer/>
       </BrowserRouter>
     );
   }
