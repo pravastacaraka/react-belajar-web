@@ -1,21 +1,24 @@
+$color: #228BE6;
+
 .btn {
-  &:focus {
-    outline: 0;
-    box-shadow: none;
+  &:focus, &:active {
+    outline: none !important;
+    box-shadow: none !important;
   }
 
   &.btn-primary {
-    background-color: #228BE6;
-    border-color: #228BE6;
+    background-color: $color;
+    border-color: $color;
   }
 
   &.btn-outline-primary {
-    color: #228BE6;
-    border-color: #228BE6;
+    color: $color;
+    border-color: $color;
+    background-color: transparent;
 
     &:not(.btn-login):hover {
-      background-color: #228BE6;
-      border-color: #228BE6;
+      background-color: $color;
+      border-color: $color;
       color: #FFF;
     }
   }
@@ -31,8 +34,8 @@
 }
 
 .btn-login:hover {
-  color: #228BE6;
-  border-color: #228BE6;
+  color: $color;
+  border-color: $color;
   background-color: #FFF;
 }
 
@@ -50,4 +53,11 @@
     color: #9FA6B0;
     background-color: #CFD2D4;
   }
+}
+
+.btn-order {
+  font-weight: 700;
+  border-radius: 8px;
+  height: 40px;
+  font-size: 1.1em;
 }
